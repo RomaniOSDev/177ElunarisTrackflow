@@ -3,33 +3,97 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 60;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		300F7C302FB46A7200A41BC2 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7BF92FB46A7200A41BC2 /* AppColors.swift */; };
+		300F7C312FB46A7200A41BC2 /* AppDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7BFA2FB46A7200A41BC2 /* AppDataStore.swift */; };
+		300F7C322FB46A7200A41BC2 /* AppExternalLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7BFB2FB46A7200A41BC2 /* AppExternalLink.swift */; };
+		300F7C332FB46A7200A41BC2 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7BFC2FB46A7200A41BC2 /* Feedback.swift */; };
+		300F7C342FB46A7200A41BC2 /* LayeredAppBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7BFD2FB46A7200A41BC2 /* LayeredAppBackground.swift */; };
+		300F7C352FB46A7200A41BC2 /* LearningModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7BFE2FB46A7200A41BC2 /* LearningModels.swift */; };
+		300F7C362FB46A7200A41BC2 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7BFF2FB46A7200A41BC2 /* Notifications.swift */; };
+		300F7C372FB46A7200A41BC2 /* ShakeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C002FB46A7200A41BC2 /* ShakeEffect.swift */; };
+		300F7C382FB46A7200A41BC2 /* StudySpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C012FB46A7200A41BC2 /* StudySpeech.swift */; };
+		300F7C392FB46A7200A41BC2 /* AddTopicSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C032FB46A7200A41BC2 /* AddTopicSheet.swift */; };
+		300F7C3A2FB46A7200A41BC2 /* FlashcardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C042FB46A7200A41BC2 /* FlashcardsView.swift */; };
+		300F7C3B2FB46A7200A41BC2 /* FlashcardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C052FB46A7200A41BC2 /* FlashcardsViewModel.swift */; };
+		300F7C3C2FB46A7200A41BC2 /* FlashcardTopicDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C062FB46A7200A41BC2 /* FlashcardTopicDetailView.swift */; };
+		300F7C3D2FB46A7200A41BC2 /* MixedReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C072FB46A7200A41BC2 /* MixedReviewView.swift */; };
+		300F7C3E2FB46A7200A41BC2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C092FB46A7200A41BC2 /* HomeView.swift */; };
+		300F7C3F2FB46A7200A41BC2 /* LearnHubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C0A2FB46A7200A41BC2 /* LearnHubView.swift */; };
+		300F7C402FB46A7200A41BC2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C0B2FB46A7200A41BC2 /* MainTabView.swift */; };
+		300F7C412FB46A7200A41BC2 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C0D2FB46A7200A41BC2 /* OnboardingView.swift */; };
+		300F7C422FB46A7200A41BC2 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C0E2FB46A7200A41BC2 /* OnboardingViewModel.swift */; };
+		300F7C432FB46A7200A41BC2 /* ProgressTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C102FB46A7200A41BC2 /* ProgressTrackerView.swift */; };
+		300F7C442FB46A7200A41BC2 /* ProgressTrackerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C112FB46A7200A41BC2 /* ProgressTrackerViewModel.swift */; };
+		300F7C452FB46A7200A41BC2 /* QuickQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C132FB46A7200A41BC2 /* QuickQuizView.swift */; };
+		300F7C462FB46A7200A41BC2 /* QuickQuizViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C142FB46A7200A41BC2 /* QuickQuizViewModel.swift */; };
+		300F7C472FB46A7200A41BC2 /* QuizSessionFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C152FB46A7200A41BC2 /* QuizSessionFlowView.swift */; };
+		300F7C482FB46A7200A41BC2 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C172FB46A7200A41BC2 /* PrivacyPolicyView.swift */; };
+		300F7C492FB46A7200A41BC2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C182FB46A7200A41BC2 /* SettingsView.swift */; };
+		300F7C4A2FB46A7200A41BC2 /* StatsAchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C1A2FB46A7200A41BC2 /* StatsAchievementsView.swift */; };
+		300F7C4B2FB46A7200A41BC2 /* StudyComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C1F2FB46A7200A41BC2 /* StudyComponents.swift */; };
+		300F7C4C2FB46A7200A41BC2 /* AchievementBannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C212FB46A7200A41BC2 /* AchievementBannerController.swift */; };
+		300F7C4D2FB46A7200A41BC2 /* AchievementBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C222FB46A7200A41BC2 /* AchievementBannerView.swift */; };
+		300F7C4E2FB46A7200A41BC2 /* ConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C232FB46A7200A41BC2 /* ConfettiView.swift */; };
+		300F7C4F2FB46A7200A41BC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C252FB46A7200A41BC2 /* AppDelegate.swift */; };
+		300F7C502FB46A7200A41BC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C272FB46A7200A41BC2 /* ContentView.swift */; };
+		300F7C512FB46A7200A41BC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C2D2FB46A7200A41BC2 /* SceneDelegate.swift */; };
+		300F7C522FB46A7200A41BC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C2E2FB46A7200A41BC2 /* ViewController.swift */; };
+		300F7C532FB46A7200A41BC2 /* privacy_policy.md in Resources */ = {isa = PBXBuildFile; fileRef = 300F7C1D2FB46A7200A41BC2 /* privacy_policy.md */; };
+		300F7C542FB46A7200A41BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300F7C262FB46A7200A41BC2 /* Assets.xcassets */; };
+		300F7C562FB46A7200A41BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300F7C2A2FB46A7200A41BC2 /* LaunchScreen.storyboard */; };
+		300F7C572FB46A7200A41BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300F7C2C2FB46A7200A41BC2 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		300F7BF92FB46A7200A41BC2 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		300F7BFA2FB46A7200A41BC2 /* AppDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataStore.swift; sourceTree = "<group>"; };
+		300F7BFB2FB46A7200A41BC2 /* AppExternalLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExternalLink.swift; sourceTree = "<group>"; };
+		300F7BFC2FB46A7200A41BC2 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		300F7BFD2FB46A7200A41BC2 /* LayeredAppBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayeredAppBackground.swift; sourceTree = "<group>"; };
+		300F7BFE2FB46A7200A41BC2 /* LearningModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningModels.swift; sourceTree = "<group>"; };
+		300F7BFF2FB46A7200A41BC2 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		300F7C002FB46A7200A41BC2 /* ShakeEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeEffect.swift; sourceTree = "<group>"; };
+		300F7C012FB46A7200A41BC2 /* StudySpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudySpeech.swift; sourceTree = "<group>"; };
+		300F7C032FB46A7200A41BC2 /* AddTopicSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTopicSheet.swift; sourceTree = "<group>"; };
+		300F7C042FB46A7200A41BC2 /* FlashcardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsView.swift; sourceTree = "<group>"; };
+		300F7C052FB46A7200A41BC2 /* FlashcardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardsViewModel.swift; sourceTree = "<group>"; };
+		300F7C062FB46A7200A41BC2 /* FlashcardTopicDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashcardTopicDetailView.swift; sourceTree = "<group>"; };
+		300F7C072FB46A7200A41BC2 /* MixedReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedReviewView.swift; sourceTree = "<group>"; };
+		300F7C092FB46A7200A41BC2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		300F7C0A2FB46A7200A41BC2 /* LearnHubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnHubView.swift; sourceTree = "<group>"; };
+		300F7C0B2FB46A7200A41BC2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		300F7C0D2FB46A7200A41BC2 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		300F7C0E2FB46A7200A41BC2 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		300F7C102FB46A7200A41BC2 /* ProgressTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTrackerView.swift; sourceTree = "<group>"; };
+		300F7C112FB46A7200A41BC2 /* ProgressTrackerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTrackerViewModel.swift; sourceTree = "<group>"; };
+		300F7C132FB46A7200A41BC2 /* QuickQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickQuizView.swift; sourceTree = "<group>"; };
+		300F7C142FB46A7200A41BC2 /* QuickQuizViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickQuizViewModel.swift; sourceTree = "<group>"; };
+		300F7C152FB46A7200A41BC2 /* QuizSessionFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizSessionFlowView.swift; sourceTree = "<group>"; };
+		300F7C172FB46A7200A41BC2 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		300F7C182FB46A7200A41BC2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		300F7C1A2FB46A7200A41BC2 /* StatsAchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsAchievementsView.swift; sourceTree = "<group>"; };
+		300F7C1D2FB46A7200A41BC2 /* privacy_policy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = privacy_policy.md; sourceTree = "<group>"; };
+		300F7C1F2FB46A7200A41BC2 /* StudyComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudyComponents.swift; sourceTree = "<group>"; };
+		300F7C212FB46A7200A41BC2 /* AchievementBannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementBannerController.swift; sourceTree = "<group>"; };
+		300F7C222FB46A7200A41BC2 /* AchievementBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementBannerView.swift; sourceTree = "<group>"; };
+		300F7C232FB46A7200A41BC2 /* ConfettiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfettiView.swift; sourceTree = "<group>"; };
+		300F7C252FB46A7200A41BC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		300F7C262FB46A7200A41BC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		300F7C272FB46A7200A41BC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		300F7C282FB46A7200A41BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		300F7C292FB46A7200A41BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		300F7C2B2FB46A7200A41BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		300F7C2D2FB46A7200A41BC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		300F7C2E2FB46A7200A41BC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30B49E6F2FB4448A005B4C21 /* 177ElunarisTrackflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 177ElunarisTrackflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A207BCFAEBE7B445F12EE5DD /* Pods-177ElunarisTrackflow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-177ElunarisTrackflow.debug.xcconfig"; path = "Target Support Files/Pods-177ElunarisTrackflow/Pods-177ElunarisTrackflow.debug.xcconfig"; sourceTree = "<group>"; };
+		AB29A5CC5B56D8A68A31E1DC /* Pods_177ElunarisTrackflow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_177ElunarisTrackflow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF1D8923292BE500B1D182C6 /* Pods-177ElunarisTrackflow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-177ElunarisTrackflow.release.xcconfig"; path = "Target Support Files/Pods-177ElunarisTrackflow/Pods-177ElunarisTrackflow.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		30B49E812FB4448B005B4C21 /* Exceptions for "177ElunarisTrackflow" folder in "177ElunarisTrackflow" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 30B49E6E2FB4448A005B4C21 /* 177ElunarisTrackflow */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		30B49E712FB4448A005B4C21 /* 177ElunarisTrackflow */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				30B49E812FB4448B005B4C21 /* Exceptions for "177ElunarisTrackflow" folder in "177ElunarisTrackflow" target */,
-			);
-			path = 177ElunarisTrackflow;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		30B49E6C2FB4448A005B4C21 /* Frameworks */ = {
@@ -42,11 +106,156 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300F7C022FB46A7200A41BC2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				300F7BF92FB46A7200A41BC2 /* AppColors.swift */,
+				300F7BFA2FB46A7200A41BC2 /* AppDataStore.swift */,
+				300F7BFB2FB46A7200A41BC2 /* AppExternalLink.swift */,
+				300F7BFC2FB46A7200A41BC2 /* Feedback.swift */,
+				300F7BFD2FB46A7200A41BC2 /* LayeredAppBackground.swift */,
+				300F7BFE2FB46A7200A41BC2 /* LearningModels.swift */,
+				300F7BFF2FB46A7200A41BC2 /* Notifications.swift */,
+				300F7C002FB46A7200A41BC2 /* ShakeEffect.swift */,
+				300F7C012FB46A7200A41BC2 /* StudySpeech.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		300F7C082FB46A7200A41BC2 /* Flashcards */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C032FB46A7200A41BC2 /* AddTopicSheet.swift */,
+				300F7C042FB46A7200A41BC2 /* FlashcardsView.swift */,
+				300F7C052FB46A7200A41BC2 /* FlashcardsViewModel.swift */,
+				300F7C062FB46A7200A41BC2 /* FlashcardTopicDetailView.swift */,
+				300F7C072FB46A7200A41BC2 /* MixedReviewView.swift */,
+			);
+			path = Flashcards;
+			sourceTree = "<group>";
+		};
+		300F7C0C2FB46A7200A41BC2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C092FB46A7200A41BC2 /* HomeView.swift */,
+				300F7C0A2FB46A7200A41BC2 /* LearnHubView.swift */,
+				300F7C0B2FB46A7200A41BC2 /* MainTabView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		300F7C0F2FB46A7200A41BC2 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C0D2FB46A7200A41BC2 /* OnboardingView.swift */,
+				300F7C0E2FB46A7200A41BC2 /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		300F7C122FB46A7200A41BC2 /* ProgressTracker */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C102FB46A7200A41BC2 /* ProgressTrackerView.swift */,
+				300F7C112FB46A7200A41BC2 /* ProgressTrackerViewModel.swift */,
+			);
+			path = ProgressTracker;
+			sourceTree = "<group>";
+		};
+		300F7C162FB46A7200A41BC2 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C132FB46A7200A41BC2 /* QuickQuizView.swift */,
+				300F7C142FB46A7200A41BC2 /* QuickQuizViewModel.swift */,
+				300F7C152FB46A7200A41BC2 /* QuizSessionFlowView.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		300F7C192FB46A7200A41BC2 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C172FB46A7200A41BC2 /* PrivacyPolicyView.swift */,
+				300F7C182FB46A7200A41BC2 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		300F7C1B2FB46A7200A41BC2 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C1A2FB46A7200A41BC2 /* StatsAchievementsView.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		300F7C1C2FB46A7200A41BC2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C082FB46A7200A41BC2 /* Flashcards */,
+				300F7C0C2FB46A7200A41BC2 /* Main */,
+				300F7C0F2FB46A7200A41BC2 /* Onboarding */,
+				300F7C122FB46A7200A41BC2 /* ProgressTracker */,
+				300F7C162FB46A7200A41BC2 /* Quiz */,
+				300F7C192FB46A7200A41BC2 /* Settings */,
+				300F7C1B2FB46A7200A41BC2 /* Stats */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		300F7C1E2FB46A7200A41BC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C1D2FB46A7200A41BC2 /* privacy_policy.md */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		300F7C202FB46A7200A41BC2 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C1F2FB46A7200A41BC2 /* StudyComponents.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		300F7C242FB46A7200A41BC2 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C202FB46A7200A41BC2 /* Components */,
+				300F7C212FB46A7200A41BC2 /* AchievementBannerController.swift */,
+				300F7C222FB46A7200A41BC2 /* AchievementBannerView.swift */,
+				300F7C232FB46A7200A41BC2 /* ConfettiView.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		300F7C2F2FB46A7200A41BC2 /* 177ElunarisTrackflow */ = {
+			isa = PBXGroup;
+			children = (
+				300F7C022FB46A7200A41BC2 /* Core */,
+				300F7C1C2FB46A7200A41BC2 /* Features */,
+				300F7C1E2FB46A7200A41BC2 /* Resources */,
+				300F7C242FB46A7200A41BC2 /* Shared */,
+				300F7C252FB46A7200A41BC2 /* AppDelegate.swift */,
+				300F7C262FB46A7200A41BC2 /* Assets.xcassets */,
+				300F7C272FB46A7200A41BC2 /* ContentView.swift */,
+				300F7C282FB46A7200A41BC2 /* Info.plist */,
+				300F7C2A2FB46A7200A41BC2 /* LaunchScreen.storyboard */,
+				300F7C2C2FB46A7200A41BC2 /* Main.storyboard */,
+				300F7C2D2FB46A7200A41BC2 /* SceneDelegate.swift */,
+				300F7C2E2FB46A7200A41BC2 /* ViewController.swift */,
+			);
+			path = 177ElunarisTrackflow;
+			sourceTree = "<group>";
+		};
 		30B49E662FB4448A005B4C21 = {
 			isa = PBXGroup;
 			children = (
-				30B49E712FB4448A005B4C21 /* 177ElunarisTrackflow */,
+				300F7C2F2FB46A7200A41BC2 /* 177ElunarisTrackflow */,
 				30B49E702FB4448A005B4C21 /* Products */,
+				B06D2F666E8316D23BF9F619 /* Pods */,
+				489664153246F80021978032 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +267,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		489664153246F80021978032 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB29A5CC5B56D8A68A31E1DC /* Pods_177ElunarisTrackflow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B06D2F666E8316D23BF9F619 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A207BCFAEBE7B445F12EE5DD /* Pods-177ElunarisTrackflow.debug.xcconfig */,
+				CF1D8923292BE500B1D182C6 /* Pods-177ElunarisTrackflow.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -65,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30B49E822FB4448B005B4C21 /* Build configuration list for PBXNativeTarget "177ElunarisTrackflow" */;
 			buildPhases = (
+				FE5A13BECDCAFC8FFC13A462 /* [CP] Check Pods Manifest.lock */,
 				30B49E6B2FB4448A005B4C21 /* Sources */,
 				30B49E6C2FB4448A005B4C21 /* Frameworks */,
 				30B49E6D2FB4448A005B4C21 /* Resources */,
@@ -73,12 +300,7 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				30B49E712FB4448A005B4C21 /* 177ElunarisTrackflow */,
-			);
 			name = 177ElunarisTrackflow;
-			packageProductDependencies = (
-			);
 			productName = 177ElunarisTrackflow;
 			productReference = 30B49E6F2FB4448A005B4C21 /* 177ElunarisTrackflow.app */;
 			productType = "com.apple.product-type.application";
@@ -99,6 +321,7 @@
 				};
 			};
 			buildConfigurationList = 30B49E6A2FB4448A005B4C21 /* Build configuration list for PBXProject "177ElunarisTrackflow" */;
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -106,8 +329,6 @@
 				Base,
 			);
 			mainGroup = 30B49E662FB4448A005B4C21;
-			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 30B49E702FB4448A005B4C21 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,81 +343,186 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300F7C532FB46A7200A41BC2 /* privacy_policy.md in Resources */,
+				300F7C542FB46A7200A41BC2 /* Assets.xcassets in Resources */,
+				300F7C562FB46A7200A41BC2 /* LaunchScreen.storyboard in Resources */,
+				300F7C572FB46A7200A41BC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FE5A13BECDCAFC8FFC13A462 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-177ElunarisTrackflow-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		30B49E6B2FB4448A005B4C21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300F7C302FB46A7200A41BC2 /* AppColors.swift in Sources */,
+				300F7C312FB46A7200A41BC2 /* AppDataStore.swift in Sources */,
+				300F7C322FB46A7200A41BC2 /* AppExternalLink.swift in Sources */,
+				300F7C332FB46A7200A41BC2 /* Feedback.swift in Sources */,
+				300F7C342FB46A7200A41BC2 /* LayeredAppBackground.swift in Sources */,
+				300F7C352FB46A7200A41BC2 /* LearningModels.swift in Sources */,
+				300F7C362FB46A7200A41BC2 /* Notifications.swift in Sources */,
+				300F7C372FB46A7200A41BC2 /* ShakeEffect.swift in Sources */,
+				300F7C382FB46A7200A41BC2 /* StudySpeech.swift in Sources */,
+				300F7C392FB46A7200A41BC2 /* AddTopicSheet.swift in Sources */,
+				300F7C3A2FB46A7200A41BC2 /* FlashcardsView.swift in Sources */,
+				300F7C3B2FB46A7200A41BC2 /* FlashcardsViewModel.swift in Sources */,
+				300F7C3C2FB46A7200A41BC2 /* FlashcardTopicDetailView.swift in Sources */,
+				300F7C3D2FB46A7200A41BC2 /* MixedReviewView.swift in Sources */,
+				300F7C3E2FB46A7200A41BC2 /* HomeView.swift in Sources */,
+				300F7C3F2FB46A7200A41BC2 /* LearnHubView.swift in Sources */,
+				300F7C402FB46A7200A41BC2 /* MainTabView.swift in Sources */,
+				300F7C412FB46A7200A41BC2 /* OnboardingView.swift in Sources */,
+				300F7C422FB46A7200A41BC2 /* OnboardingViewModel.swift in Sources */,
+				300F7C432FB46A7200A41BC2 /* ProgressTrackerView.swift in Sources */,
+				300F7C442FB46A7200A41BC2 /* ProgressTrackerViewModel.swift in Sources */,
+				300F7C452FB46A7200A41BC2 /* QuickQuizView.swift in Sources */,
+				300F7C462FB46A7200A41BC2 /* QuickQuizViewModel.swift in Sources */,
+				300F7C472FB46A7200A41BC2 /* QuizSessionFlowView.swift in Sources */,
+				300F7C482FB46A7200A41BC2 /* PrivacyPolicyView.swift in Sources */,
+				300F7C492FB46A7200A41BC2 /* SettingsView.swift in Sources */,
+				300F7C4A2FB46A7200A41BC2 /* StatsAchievementsView.swift in Sources */,
+				300F7C4B2FB46A7200A41BC2 /* StudyComponents.swift in Sources */,
+				300F7C4C2FB46A7200A41BC2 /* AchievementBannerController.swift in Sources */,
+				300F7C4D2FB46A7200A41BC2 /* AchievementBannerView.swift in Sources */,
+				300F7C4E2FB46A7200A41BC2 /* ConfettiView.swift in Sources */,
+				300F7C4F2FB46A7200A41BC2 /* AppDelegate.swift in Sources */,
+				300F7C502FB46A7200A41BC2 /* ContentView.swift in Sources */,
+				300F7C512FB46A7200A41BC2 /* SceneDelegate.swift in Sources */,
+				300F7C522FB46A7200A41BC2 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		300F7C2A2FB46A7200A41BC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				300F7C292FB46A7200A41BC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		300F7C2C2FB46A7200A41BC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				300F7C2B2FB46A7200A41BC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		30B49E832FB4448B005B4C21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A207BCFAEBE7B445F12EE5DD /* Pods-177ElunarisTrackflow.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 177ElunarisTrackflow/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Elunaris Trackflow";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-77ElunarisTrackflow";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emm.3l8n6r1str7ckfl0w;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		30B49E842FB4448B005B4C21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1D8923292BE500B1D182C6 /* Pods-177ElunarisTrackflow.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = NO;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 177ElunarisTrackflow/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Elunaris Trackflow";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "home.-77ElunarisTrackflow";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emm.3l8n6r1str7ckfl0w;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
