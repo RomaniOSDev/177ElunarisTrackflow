@@ -8,7 +8,7 @@ workflows:
           XCODE_WORKSPACE: "177ElunarisTrackflow.xcworkspace"
           XCODE_SCHEME: "177ElunarisTrackflow"
           BUNDLE_ID: "com.emm.3l8n6r1str7ckfl0w"
-          APP_STORE_APP_ID: 6764544142
+          APP_STORE_APP_ID: 6756367614
         xcode: latest
         cocoapods: 1.14.2
       scripts:
