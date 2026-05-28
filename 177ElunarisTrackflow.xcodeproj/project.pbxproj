@@ -41,11 +41,9 @@
 		300F7C4F2FB46A7200A41BC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C252FB46A7200A41BC2 /* AppDelegate.swift */; };
 		300F7C502FB46A7200A41BC2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C272FB46A7200A41BC2 /* ContentView.swift */; };
 		300F7C512FB46A7200A41BC2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C2D2FB46A7200A41BC2 /* SceneDelegate.swift */; };
-		300F7C522FB46A7200A41BC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300F7C2E2FB46A7200A41BC2 /* ViewController.swift */; };
 		300F7C532FB46A7200A41BC2 /* privacy_policy.md in Resources */ = {isa = PBXBuildFile; fileRef = 300F7C1D2FB46A7200A41BC2 /* privacy_policy.md */; };
 		300F7C542FB46A7200A41BC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 300F7C262FB46A7200A41BC2 /* Assets.xcassets */; };
 		300F7C562FB46A7200A41BC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300F7C2A2FB46A7200A41BC2 /* LaunchScreen.storyboard */; };
-		300F7C572FB46A7200A41BC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 300F7C2C2FB46A7200A41BC2 /* Main.storyboard */; };
 		3714D0E22FB75B8B00FB09F3 /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3714D0E12FB75B8B00FB09F3 /* AlamofireDynamic */; };
 		3714D0E52FB75B9F00FB09F3 /* AppsFlyerLib-Static in Frameworks */ = {isa = PBXBuildFile; productRef = 3714D0E42FB75B9F00FB09F3 /* AppsFlyerLib-Static */; };
 		3714D0E82FB75CBA00FB09F3 /* ElunarisModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3714D0E72FB75CB200FB09F3 /* ElunarisModels.swift */; };
@@ -93,9 +91,7 @@
 		300F7C272FB46A7200A41BC2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		300F7C282FB46A7200A41BC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		300F7C292FB46A7200A41BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		300F7C2B2FB46A7200A41BC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		300F7C2D2FB46A7200A41BC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		300F7C2E2FB46A7200A41BC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		30B49E6F2FB4448A005B4C21 /* 177ElunarisTrackflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 177ElunarisTrackflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3714D0E72FB75CB200FB09F3 /* ElunarisModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElunarisModels.swift; sourceTree = "<group>"; };
 		3714D0E92FB75CBD00FB09F3 /* ElunarisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElunarisManager.swift; sourceTree = "<group>"; };
@@ -260,9 +256,7 @@
 				300F7C272FB46A7200A41BC2 /* ContentView.swift */,
 				300F7C282FB46A7200A41BC2 /* Info.plist */,
 				300F7C2A2FB46A7200A41BC2 /* LaunchScreen.storyboard */,
-				300F7C2C2FB46A7200A41BC2 /* Main.storyboard */,
 				300F7C2D2FB46A7200A41BC2 /* SceneDelegate.swift */,
-				300F7C2E2FB46A7200A41BC2 /* ViewController.swift */,
 			);
 			path = 177ElunarisTrackflow;
 			sourceTree = "<group>";
@@ -379,7 +373,6 @@
 				300F7C532FB46A7200A41BC2 /* privacy_policy.md in Resources */,
 				300F7C542FB46A7200A41BC2 /* Assets.xcassets in Resources */,
 				300F7C562FB46A7200A41BC2 /* LaunchScreen.storyboard in Resources */,
-				300F7C572FB46A7200A41BC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,7 +447,6 @@
 				300F7C502FB46A7200A41BC2 /* ContentView.swift in Sources */,
 				3714D0EE2FB75CEB00FB09F3 /* ElunarisServices.swift in Sources */,
 				300F7C512FB46A7200A41BC2 /* SceneDelegate.swift in Sources */,
-				300F7C522FB46A7200A41BC2 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,14 +461,6 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		300F7C2C2FB46A7200A41BC2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				300F7C2B2FB46A7200A41BC2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -489,7 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = 177ElunarisTrackflow/177ElunarisTrackflow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 177ElunarisTrackflow/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Elunaris Trackflow";
@@ -497,7 +481,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -532,7 +515,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = 177ElunarisTrackflow/177ElunarisTrackflow.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = 177ElunarisTrackflow/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Elunaris Trackflow";
@@ -540,7 +523,6 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
