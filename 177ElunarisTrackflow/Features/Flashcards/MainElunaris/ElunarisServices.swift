@@ -7,17 +7,32 @@ import Foundation
 import Combine
 import AppsFlyerLib
 import SwiftUI
+import UIKit
+import UserNotifications
 
     extension ElunarisTrackflowUpdateManager {
-    
-        @MainActor public func onConversionDataSuccess(_ conversionInfo: [AnyHashable : Any]) {
-            let debugLocal = Int.random(in: 1...100)
-            print("appsFl succes ->: \(debugLocal)")
-            
-            let rawData   = try! JSONSerialization.data(withJSONObject: conversionInfo, options: .fragmentsAllowed)
-            let rawString = String(data: rawData, encoding: .utf8) ?? "{}"
-            
-            let finalJson = """
+
+    nonisolated public func onConversionDataSuccess(_ conversionInfo: [AnyHashable: Any]) {
+        Task { @MainActor in
+            self.handleOnConversionDataSuccess(conversionInfo)
+        }
+    }
+
+    @MainActor private func handleOnConversionDataSuccess(_ conversionInfo: [AnyHashable: Any]) {
+        let debugLocal = Int.random(in: 1...100)
+        print("appsFl succes ->: \(debugLocal)")
+
+        let rawString: String
+        do {
+            let rawData = try JSONSerialization.data(withJSONObject: conversionInfo, options: .fragmentsAllowed)
+            rawString = String(data: rawData, encoding: .utf8) ?? "{}"
+        } catch {
+            print("onConversionDataSuccess JSONSerialization failed: \(error)")
+            ElunarisTrackflowUpdateManagerSendNoticeError(name: "RemMess")
+            return
+        }
+
+        let finalJson = """
         {
             "\(appsRefKey)": \(rawString),
             "\(appIDRef)": "\(AppsFlyerLib.shared().getAppsFlyerUID() ?? "")",
@@ -25,11 +40,11 @@ import SwiftUI
             "\(tokenRef)": "\(ElunarisTrackflowUpdateManagerTokenHex)"
         }
         """
-            
-            let sanitizedJson = finalJson.replacingOccurrences(of: "#", with: "")
-            
-            
-            ElunarisTrackflowUpdateManager.shared.ElunarisTrackflowUpdateManagerPrivacyAndTermsReq(code: sanitizedJson) { result in
+
+        let sanitizedJson = finalJson.replacingOccurrences(of: "#", with: "")
+
+        ElunarisTrackflowUpdateManagerPrivacyAndTermsReq(code: sanitizedJson) { result in
+            Task { @MainActor in
                 switch result {
                 case .success(let msg):
                     self.ElunarisTrackflowUpdateManagerSendNotice(name: "RemMess", message: msg)
@@ -38,19 +53,27 @@ import SwiftUI
                 }
             }
         }
-        
-    
-    public func onConversionDataFail(_ error: any Error) {
+    }
+
+    nonisolated public func onConversionDataFail(_ error: any Error) {
+        Task { @MainActor in
+            self.handleOnConversionDataFail(error)
+        }
+    }
+
+    @MainActor private func handleOnConversionDataFail(_ error: any Error) {
         let dummyVal = Double.random(in: 0..<1)
-        print("onConversionDataFail | Error: \(error.localizedDescription)")
+        print("onConversionDataFail | Error: \(error.localizedDescription), dummyVal: \(dummyVal)")
         ElunarisTrackflowUpdateManagerSendNoticeError(name: "RemMess")
     }
-    
+
     @objc func ElunarisTrackflowUpdateManagerHandleActiveSession() {
-        if !ElunarisTrackflowUpdateManagerSessionStarted {
+        Task { @MainActor in
+            guard !ElunarisTrackflowUpdateManagerSessionStarted else { return }
+
             let localValue = Int.random(in: 100...200)
             print("ElunarisTrackflowUpdateManagerHandleActiveSession -> localValue = \(localValue)")
-            
+
             AppsFlyerLib.shared().start()
             ElunarisTrackflowUpdateManagerSessionStarted = true
         }
@@ -90,26 +113,22 @@ import SwiftUI
         )
     }
     
-    internal func ElunarisTrackflowUpdateManagerSendNotice(name: String, message: String) {
+    @MainActor internal func ElunarisTrackflowUpdateManagerSendNotice(name: String, message: String) {
         print("ElunarisTrackflowUpdateManagerSendNotice -> \(message.count)")
-        DispatchQueue.main.async {
-            NotificationCenter.default.post(
-                name: NSNotification.Name(name),
-                object: nil,
-                userInfo: ["notificationMessage": message]
-            )
-        }
+        NotificationCenter.default.post(
+            name: NSNotification.Name(name),
+            object: nil,
+            userInfo: ["notificationMessage": message]
+        )
     }
-    
-    internal func ElunarisTrackflowUpdateManagerSendNoticeError(name: String) {
+
+    @MainActor internal func ElunarisTrackflowUpdateManagerSendNoticeError(name: String) {
         print("ElunarisTrackflowUpdateManagerSendNoticeError -> \(name.count * 2)")
-        DispatchQueue.main.async {
-            NotificationCenter.default.post(
-                name: NSNotification.Name(name),
-                object: nil,
-                userInfo: ["notificationMessage": "Error occurred"]
-            )
-        }
+        NotificationCenter.default.post(
+            name: NSNotification.Name(name),
+            object: nil,
+            userInfo: ["notificationMessage": "Error occurred"]
+        )
     }
     
     public func ElunarisTrackflowUpdateManagerParseAFSnippet() {

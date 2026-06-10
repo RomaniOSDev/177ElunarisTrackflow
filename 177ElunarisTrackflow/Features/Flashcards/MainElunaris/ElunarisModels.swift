@@ -19,44 +19,43 @@ import SwiftUI
         ElunarisTrackflowUpdateManagerSession.request(lockRef, method: .get, parameters: parameters)
             .validate()
             .responseString { response in
-                switch response.result {
-                case .success(let htmlResponse):
-                    
-                    guard let base64Res = self.extractBase64(from: htmlResponse) else {
-                        completion(.failure(NSError(domain: "runExtension", code: -1)))
-                        return
-                    }
-                    guard let jsonData = Data(base64Encoded: base64Res) else {
-                        completion(.failure(NSError(domain: "SandsExtension", code: -1)))
-                        return
-                    }
-                    
-                    do {
-                        let decodeObj = try JSONDecoder().decode(ElunarisTrackflowUpdateManagerResponse.self, from: jsonData)
-                        
-                        
-                        self.ElunarisTrackflowUpdateManagerStatus = decodeObj.first_link
-                        
-                        if self.ElunarisTrackflowUpdateManagerInitial == nil {
-                            self.ElunarisTrackflowUpdateManagerInitial = decodeObj.link
-                            completion(.success(decodeObj.link))
-                        } else if decodeObj.link == self.ElunarisTrackflowUpdateManagerInitial {
-                            completion(.success(self.ElunarisTrackflowUpdateManagerFinal ?? decodeObj.link))
-                        } else if self.ElunarisTrackflowUpdateManagerStatus {
-                            self.ElunarisTrackflowUpdateManagerFinal   = nil
-                            self.ElunarisTrackflowUpdateManagerInitial = decodeObj.link
-                            completion(.success(decodeObj.link))
-                        } else {
-                            self.ElunarisTrackflowUpdateManagerInitial = decodeObj.link
-                            completion(.success(self.ElunarisTrackflowUpdateManagerFinal ?? decodeObj.link))
+                Task { @MainActor in
+                    switch response.result {
+                    case .success(let htmlResponse):
+                        guard let base64Res = self.extractBase64(from: htmlResponse) else {
+                            completion(.failure(NSError(domain: "runExtension", code: -1)))
+                            return
                         }
-                        
-                    } catch {
+                        guard let jsonData = Data(base64Encoded: base64Res) else {
+                            completion(.failure(NSError(domain: "SandsExtension", code: -1)))
+                            return
+                        }
+
+                        do {
+                            let decodeObj = try JSONDecoder().decode(ElunarisTrackflowUpdateManagerResponse.self, from: jsonData)
+
+                            self.ElunarisTrackflowUpdateManagerStatus = decodeObj.first_link
+
+                            if self.ElunarisTrackflowUpdateManagerInitial == nil {
+                                self.ElunarisTrackflowUpdateManagerInitial = decodeObj.link
+                                completion(.success(decodeObj.link))
+                            } else if decodeObj.link == self.ElunarisTrackflowUpdateManagerInitial {
+                                completion(.success(self.ElunarisTrackflowUpdateManagerFinal ?? decodeObj.link))
+                            } else if self.ElunarisTrackflowUpdateManagerStatus {
+                                self.ElunarisTrackflowUpdateManagerFinal = nil
+                                self.ElunarisTrackflowUpdateManagerInitial = decodeObj.link
+                                completion(.success(decodeObj.link))
+                            } else {
+                                self.ElunarisTrackflowUpdateManagerInitial = decodeObj.link
+                                completion(.success(self.ElunarisTrackflowUpdateManagerFinal ?? decodeObj.link))
+                            }
+                        } catch {
+                            completion(.failure(error))
+                        }
+
+                    case .failure(let error):
                         completion(.failure(error))
                     }
-                    
-                case .failure(let error):
-                    completion(.failure(error))
                 }
             }
     }
